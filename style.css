@@ -1,0 +1,86 @@
+:root {
+  --transition: all 300ms ease-in-out;
+  --dark-color: #332e29;
+  --light-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  transition: transform 0.5s ease;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  pad: 0 2rem;
+}
+body {
+  font-size: 1.6rem;
+  font-family: serif;
+  line-height: 1.6;
+}
+.topnav {
+  background-color: #eee;
+  margin-bottom: 2rem;
+}
+.topnav nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.topnav nav a {
+  display: flex;
+  padding: 0 1rem;
+  transition: transform 330ms ease-in-out;
+}
+a:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+#aboutMe {
+  margin-bottom: 2rem;
+}
+.about-left {
+  flex: 50%;
+}
+
+.about-right {
+  flex: 50%;
+}
+.aboutMe-content {
+  display: flex;
+  width: 100%;
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10%;
+}
+.about-right h2 {
+  display: flex;
+  justify-content: center;
+}
+.about-right .title {
+  margin-bottom: 1rem;
+}
+.about-right .lead {
+  display: flex;
+  justify-content: center;
+}
