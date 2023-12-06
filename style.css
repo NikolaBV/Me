@@ -1,7 +1,5 @@
 :root {
   --transition: all 300ms ease-in-out;
-  --dark-color: #332e29;
-  --light-color: #fff;
 }
 * {
   box-sizing: border-box;
@@ -25,6 +23,7 @@ body {
   font-size: 1.6rem;
   font-family: serif;
   line-height: 1.6;
+  background-color: #eee;
 }
 .topnav {
   background-color: #eee;
@@ -54,7 +53,17 @@ a:hover {
   font-size: 3rem;
   font-weight: 600;
 }
-#aboutMe {
+.divider {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dividerTitle {
+  display: flex;
+  justify-content: center;
+}
+.dividerTitle .divider #aboutMe {
   margin-bottom: 2rem;
 }
 .about-left {
@@ -63,6 +72,8 @@ a:hover {
 
 .about-right {
   flex: 50%;
+  border-radius: 10%;
+  background-color: white;
 }
 .aboutMe-content {
   display: flex;
@@ -83,4 +94,22 @@ img {
 .about-right .lead {
   display: flex;
   justify-content: center;
+}
+section {
+  margin-bottom: 2rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+}
+.footerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.bottomnav nav a {
+  padding: 0 1rem;
+  transition: transform 330ms ease-in-out;
 }
