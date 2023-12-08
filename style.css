@@ -13,6 +13,9 @@ html {
 img {
   transition: transform 0.5s ease;
 }
+p {
+  text-align: justify;
+}
 .container {
   display: flex;
   max-width: 1200px;
@@ -26,7 +29,7 @@ body {
   background-color: #eee;
 }
 .topnav {
-  background-color: #eee;
+  background-color: #ddd;
   margin-bottom: 2rem;
 }
 .topnav nav {
@@ -35,9 +38,14 @@ body {
   align-items: center;
   height: 3rem;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .topnav nav a {
   display: flex;
   padding: 0 1rem;
+  text-shadow: 0px 2px black;
   transition: transform 330ms ease-in-out;
 }
 a:hover {
@@ -63,13 +71,17 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-.dividerTitle .divider #aboutMe {
+.dividerTitle .divider #content {
   margin-bottom: 2rem;
 }
 .about-left {
   flex: 50%;
 }
-
+.about-left img {
+  width: 100%;
+  display: block;
+  border-radius: 10%;
+}
 .about-right {
   flex: 50%;
   border-radius: 10%;
@@ -79,11 +91,7 @@ a:hover {
   display: flex;
   width: 100%;
 }
-img {
-  width: 100%;
-  display: block;
-  border-radius: 10%;
-}
+
 .about-right h2 {
   display: flex;
   justify-content: center;
@@ -94,6 +102,12 @@ img {
 .about-right .lead {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.lead p {
+  display: flex;
+  padding: 0 2rem;
+  text-indent: 1rem;
 }
 section {
   margin-bottom: 2rem;
