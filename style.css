@@ -29,9 +29,10 @@ body {
   background-color: #eee;
 }
 .topnav {
-  background-color: #ddd;
+  background-color: #eee;
   margin-bottom: 2rem;
 }
+
 .topnav nav {
   display: flex;
   justify-content: center;
@@ -49,7 +50,6 @@ a {
   transition: transform 330ms ease-in-out;
 }
 a:hover {
-  opacity: 0.7;
   transform: scale(1.2);
 }
 .headerTitle {
@@ -61,18 +61,10 @@ a:hover {
   font-size: 3rem;
   font-weight: 600;
 }
-.divider {
-  margin: 1rem 0rem;
+.mainTitle {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.dividerTitle {
-  display: flex;
-  justify-content: center;
-}
-.dividerTitle .divider #content {
-  margin-bottom: 2rem;
+  padding: 1rem 0;
 }
 .about-left {
   flex: 50%;
@@ -85,7 +77,6 @@ a:hover {
 .about-right {
   flex: 50%;
   border-radius: 10%;
-  background-color: white;
 }
 .aboutMe-content {
   display: flex;
@@ -111,11 +102,13 @@ a:hover {
 }
 section {
   margin-bottom: 2rem;
+  background-color: white;
+  padding-bottom: 1rem;
 }
 footer {
   display: flex;
   align-items: center;
-  background-color: #ddd;
+  background-color: #eee;
 }
 .footerTitle {
   display: flex;
